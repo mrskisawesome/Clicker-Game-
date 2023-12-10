@@ -19,27 +19,40 @@ body {
   padding: 20px;
   margin: 40px;
 }
-button {
+.button1 {
   display: flex;
   flex-flow: column-wrap;
   max-width: 150px;
   margin-left: 10px;
 }
+
 .boxmid {
   display: flex;
   align-items: left;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 .tim {
+  display: flex;
+  flex-direction: column;
   background-color: transparent;
   border: none;
   position: relative;
-  bottom: 228px;
-  left: 150px;
-  max-width: 150x;
-  max-height: 150px;
+  bottom: 130px;
+  left: 170px;
+  max-width: 100px;
+  max-height: 100px;
+}
+.manny {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  bottom: 250px;
+  left: 700px;
+  max-width: 50px;
+  max-height: 100px;
 }
 .score {
+  position: relative;
   font-size: xx-large;
   font-weight: bolder;
   text-align: left;
@@ -48,4 +61,8 @@ button {
 h3 {
   font-weight: bolder;
   padding-left: 10px;
+}
+#manny {
+  z-index: -10;
+  opacity: 0;
 }

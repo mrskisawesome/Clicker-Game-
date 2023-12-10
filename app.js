@@ -4,6 +4,7 @@ let score = 0;
 let morePoints = 1;
 const upgradeBtn1 = document.getElementById("upgrade1");
 const upgradeBtn2 = document.getElementById("upgrade2");
+const mannyImage = document.getElementById("manny");
 
 //find the add a point button
 
@@ -40,6 +41,7 @@ function upgradeTwo() {
   } else {
     score -= 100;
     morePoints += 1;
+    mannyImage.style.opacity = "1";
   }
 }
 //on click run addPoints1
@@ -59,11 +61,12 @@ function check100() {
   //if score goes over 15, change background and start listening for click
   if (score >= 100) {
     upgradeBtn2.style.background = "limegreen";
-    upgradeBtn2.addEventListener("click", upgradeOne);
+    upgradeBtn2.addEventListener("click", upgradeTwo);
   } else {
     upgradeBtn2.style.background = "white";
   }
 }
+
 //Load the stored score from local storage
 function getLocalStorage() {
   const localScore = localStorage.getItem("score");
