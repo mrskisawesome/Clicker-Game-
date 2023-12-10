@@ -74,6 +74,8 @@ function getLocalStorage() {
     // Parse localScore to an integer before assigning it to score
     score = parseInt(localScore, 10); // Use parseInt() with radix 10
     scoreDisplay.textContent = score;
+    check15();
+    check100();
   }
 }
 getLocalStorage();
