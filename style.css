@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  color: #631670;
+  text-decoration: none;
+}
+.backgroundImage {
+  height: 100vh;
+  background-size: cover; /* how large it is in the div */
+  background-repeat: no-repeat; /* I don't want it to repeat */
+  background-position: 0%; /* where the image is */
+  position: relative; /* so the absolute children have something to be relative to */
+  background-image: url("./images/PXL_20231207_160515716.MP~2.jpg");
+}
+.box {
+  width: 30px;
+  height: 50px;
+  padding: 20px;
+  margin: 40px;
+}
+button {
+  display: flex;
+  flex-flow: column-wrap;
+  max-width: 150px;
+  margin-left: 10px;
+}
+.boxmid {
+  display: flex;
+  align-items: left;
+  margin-top: 20px;
+}
+.tim {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  bottom: 228px;
+  left: 150px;
+  max-width: 150x;
+  max-height: 150px;
+}
+.score {
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 20px;
+}
+h3 {
+  font-weight: bolder;
+  padding-left: 10px;
+}
