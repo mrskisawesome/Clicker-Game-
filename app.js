@@ -67,10 +67,13 @@ function check100() {
   }
 }
 
-//Load the stored score from local storage
+// Load the stored score from local storage
 function getLocalStorage() {
   const localScore = localStorage.getItem("score");
-  score = localScore;
-  scoreDisplay.textContent = score;
+  if (localScore !== null) {
+    // Parse localScore to an integer before assigning it to score
+    score = parseInt(localScore, 10); // Use parseInt() with radix 10
+    scoreDisplay.textContent = score;
+  }
 }
 getLocalStorage();
